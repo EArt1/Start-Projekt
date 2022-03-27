@@ -1,25 +1,26 @@
 def display_board(board):
-   print("       1   2   3")
-   print("A", end="      ")
-   print(" | ".join(board[0]))
-   print("      ---+---+---")
-   print("B", end="      ")
-   print(" | ".join(board[1]))
-   print("      ---+---+---")
-   print("C", end="      ")
-   print(" | ".join(board[2]))
-   print("      ---+---+---")
+    print("       1   2   3")
+    print("A", end="      ")
+    print(" | ".join(board[0]))
+    print("      ---+---+---")
+    print("B", end="      ")
+    print(" | ".join(board[1]))
+    print("      ---+---+---")
+    print("C", end="      ")
+    print(" | ".join(board[2]))
+    print("      ---+---+---")
+
 
 """
-  Should print the tic tac toe board in a format similar to
-       1   2   3
-    A   X | O | . 
-       ---+---+---
-    B   X | O | .
-       --+---+---
-    C   0 | X | . 
-       --+---+---
-  """
+    Should print the tic tac toe board in a format similar to
+        1   2   3
+     A   X | O | .
+        ---+---+---
+     B   X | O | .
+        --+---+---
+     C   0 | X | .
+        --+---+---
+"""
 
 
 if __name__ == "__main__":
@@ -30,11 +31,11 @@ if __name__ == "__main__":
       ['0', "X", "."]
     ]
     display_board(board)
-    # should print 
+    # should print
     #     1   2   3
-    # A   X | O | . 
+    # A   X | O | .
     #    ---+---+---
     # B   X | O | .
     #    --+---+---
-    # C   0 | X | . 
+    # C   0 | X | .
     #    --+---+---
