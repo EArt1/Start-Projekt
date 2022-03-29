@@ -1,20 +1,21 @@
 def get_menu_option():
     while True:
         how_play = input("""
-        What do you want? Select a number from 1 to 4.
+        What do you want? Select a number from 1 to 5.
         1. Human vs Human
         2. Random AI vs Random AI
         3. Human vs Random AI
-        4. Human vs Unbeatable AI
+        4. Human vs Good AI
+        5. Human vs Unbeatable AI
         """)
         try:
             how_play = int(how_play)
-            if how_play in [1, 2, 3, 4]:
+            if how_play in [1, 2, 3, 4, 5]:
                 return how_play
             else:
-                print("Please only numbers from 1 to 4.")
+                print("Please only numbers from 1 to 5.")
         except ValueError:
-            print("Please only numbers from 1 to 4.")
+            print("Please only numbers from 1 to 5.")
 
 
 '''

@@ -6,6 +6,7 @@ from function4 import get_random_ai_coordinates
 from function5 import get_unbeatable_ai_coordinates
 from function6 import get_winning_player
 from function7 import is_board_full
+from functionmy import get_unbeatable_ai_coordinates2
 import time
 
 
@@ -107,6 +108,29 @@ def main():
                 time.sleep(pause_time)
                 current_player = "O"
                 x, y = get_unbeatable_ai_coordinates(board, current_player)
+                board[x][y] = current_player
+                winning_player = get_winning_player(board)
+                if winning_player == current_player:
+                    break
+                elif is_board_full(board):
+                    break
+        elif game_mode == 5:
+            while True:
+                display_board(board)
+                print("It is X turn.")
+                current_player = "X"
+                x, y = get_human_coordinates(board, current_player)
+                board[x][y] = current_player
+                winning_player = get_winning_player(board)
+                if winning_player == current_player:
+                    break
+                elif is_board_full(board):
+                    break
+                display_board(board)
+                print("It is O turn.")
+                time.sleep(pause_time)
+                current_player = "O"
+                x, y = get_unbeatable_ai_coordinates2(board, current_player)
                 board[x][y] = current_player
                 winning_player = get_winning_player(board)
                 if winning_player == current_player:
