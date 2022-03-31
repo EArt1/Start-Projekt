@@ -7,15 +7,16 @@ def get_menu_option():
         3. Human vs Random AI
         4. Human vs Good AI
         5. Human vs Unbeatable AI
+        6. Human vs super Unbeatable AI
         """)
         try:
             how_play = int(how_play)
-            if how_play in [1, 2, 3, 4, 5]:
+            if how_play in [1, 2, 3, 4, 5, 6]:
                 return how_play
             else:
-                print("Please only numbers from 1 to 5.")
+                print("Please only numbers from 1 to 6.")
         except ValueError:
-            print("Please only numbers from 1 to 5.")
+            print("Please only numbers from 1 to 6.")
 
 
 '''
